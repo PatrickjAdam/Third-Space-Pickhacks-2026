@@ -1,4 +1,5 @@
 export const GOOGLE_MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_KEY;
+console.log("Maps key:", process.env.REACT_APP_GOOGLE_MAPS_KEY);
 
 // Each category maps to a Google Places API type.
 // color   → the map pin + filter chip color

@@ -143,6 +143,7 @@ export default function MainApp({ searchInput, setSearchInput, shouldSearch, set
       handleSearch();
       setShouldSearch(false);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [shouldSearch, google]);
 
   const toggleCategory = (type) =>

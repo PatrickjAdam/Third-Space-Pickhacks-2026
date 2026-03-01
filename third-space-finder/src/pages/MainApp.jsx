@@ -235,7 +235,7 @@ export default function MainApp({ searchInput, setSearchInput, shouldSearch, set
       <div style={s.body}>
 
         {/* Sidebar */}
-        <aside style={{ ...s.sidebar, width: sidebarOpen ? 400 : 0, minWidth: 0, transition: "width 0.3s ease", overflow: "hidden" }}>
+        <aside style={{ ...s.sidebar, width: sidebarOpen ? 400 : 0, minWidth: 0, transition: "width 0.3s ease", overflow: sidebarOpen ? "auto" : "hidden" }}>
             {searched && (
                 <ScoreCard scoreData={scoreData} places={places} searchInput={searchInput} />
             )}
